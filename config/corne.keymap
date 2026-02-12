@@ -50,14 +50,14 @@
 // -----------------------------------------------------------------------------------------
 // | DEL  |  K  |  .  |  O  |  ,  |  Y  |   |  V  |  G  |  C  |  L  |  ß  |  Z   |
 // | ESC  | H/⇧ | A/⌃ | E/⌥ | I/⌘ |  U  |   |  D  | T/⌘ | R/⌥ | N/⌃ | S/⇧ |  F   |
-// | TAB  |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  | LWR  |
-//                    | LWR | SPC | BSPC|   | TAB | ENT | RSE |
+// | TAB  |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  | NUM  |
+//                    | LWR |BSPC |SPC/S|   |ENT/S| TAB | NUM |
                         display-name = "Base";
                         bindings = <
    &kp DEL    &kp K         &kp DOT       &kp O         &kp COMMA     &kp DE_Y       &kp V  &kp G         &kp C         &kp L         &kp DE_SS     &kp DE_Z
    &kp ESC    &hml LSHFT H  &hml LCTRL A  &hml LALT E   &hml LGUI I   &kp U          &kp D  &hmr RGUI T   &hmr RALT R   &hmr RCTRL N  &hmr RSHFT S  &kp F
-   &kp TAB    &kp X         &kp Q         &kp DE_AE     &kp DE_UE     &kp DE_OE      &kp B  &kp P         &kp W         &kp M         &kp J         &mo 1
-                                          &mo 1         &kp SPACE     &kp BSPC       &kp TAB &kp RET      &mo 2
+   &kp TAB    &kp X         &kp Q         &kp DE_AE     &kp DE_UE     &kp DE_OE      &kp B  &kp P         &kp W         &kp M         &kp J         &mo 3
+                                          &mo 1         &kp BSPC      &lt 2 SPACE    &lt 2 RET &kp TAB    &mo 3
                         >;
                 };
                 lower_layer {
@@ -71,7 +71,37 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                          	        &trans       &trans       &trans         &trans   &trans   &trans
+                        >;
+                };
+
+                numbs_layer {
+// -----------------------------------------------------------------------------------------
+// | ESC  |  !  |  ~  |  {  |  }  |  \  |   |  ^  |  &  |  *  |  ?  |  _  |  `   |
+// |  "   |  @  |  $  |  (  |  )  |  /  |   |  =  |  #  |  %  |  |  |  +  |  '   |
+// |  <   |  €  | ´   |  [  |  ]  | ° ¹ |   |  -  |  :  |  ;  |  ,  |  .  |  >   |
+//                    |     |     |     |   |     |     |     |
+                        display-name = "Symb";
+                        bindings = <
+   &kp ESC       &kp LS(N1)    &kp RA(RBKT)  &kp RA(N7)    &kp RA(N0)    &kp RA(MINUS)      &kp GRAVE     &kp LS(N6)    &kp LS(RBKT)  &kp LS(MINUS) &kp LS(SLASH)  &kp LS(EQUAL)
+   &kp LS(N2)    &kp RA(Q)     &kp LS(N4)    &kp LS(N8)    &kp LS(N9)    &kp LS(N7)         &kp LS(N0)    &kp BSLH      &kp LS(N5)    &kp RA(NUBS)  &kp RBKT       &kp LS(BSLH)
+   &kp NUBS      &kp RA(E)     &kp EQUAL     &kp RA(N8)    &kp RA(N9)    &kp LS(GRAVE)      &kp SLASH     &kp LS(DOT)   &kp LS(COMMA) &kp COMMA     &kp DOT        &kp LS(NUBS)
+                                             &trans        &trans        &trans             &trans        &trans        &trans
+                        >;
+                };
+
+                numbers_layer {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |  /  |  7  |  8  |  9  |  -  |      |
+// |      |     |     |     |     |     |   |  *  |  4  |  5  |  6  |  +  |      |
+// |      |     |     |     |     |     |   |  =  |  1  |  2  |  3  |  .  |      |
+//                    |     |     |     |   |     |  0  |     |
+                        display-name = "Numb";
+                        bindings = <
+   &trans        &trans        &trans        &trans        &trans        &trans             &kp LS(N7)    &kp N7        &kp N8        &kp N9        &kp SLASH      &trans
+   &trans        &trans        &trans        &trans        &trans        &trans             &kp LS(RBKT)  &kp N4        &kp N5        &kp N6        &kp RBKT       &trans
+   &trans        &trans        &trans        &trans        &trans        &trans             &kp LS(N0)    &kp N1        &kp N2        &kp N3        &kp DOT        &trans
+                                             &trans        &trans        &trans             &trans        &kp N0        &trans
                         >;
                 };
 
