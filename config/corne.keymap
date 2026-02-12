@@ -77,15 +77,15 @@
 
                 symbols_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  !  |  ~  |  {  |  }  |  \  |   |  ^  |  &  |  *  |  ?  |  _  |  `   |
-// |  "   |  @  |  $  |  (  |  )  |  /  |   |  =  |  #  |  %  |  |  |  +  |  '   |
-// |  <   |  €  | ´   |  [  |  ]  | °   |   |  -  |  :  |  ;  |  ,  |  .  |  >   |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  /  |  ?  |  `   |
+// |  "   |  <  |  (  |  {  |  [  |  \  |   |  |  |  ]  |  }  |  )  |  >  |  '   |
+// |  ´   |  €  |  ~  |  =  |  +  |  -  |   |  _  |  :  |  ;  |  ,  |  .  |  °   |
 //                    |     | ___ |     |   |     | ___ |     |
                         display-name = "Symb";
                         bindings = <
-   &kp ESC       &kp LS(N1)    &kp RA(RBKT)  &kp RA(N7)    &kp RA(N0)    &kp RA(MINUS)      &kp GRAVE     &kp LS(N6)    &kp LS(RBKT)  &kp LS(MINUS) &kp LS(SLASH)  &kp LS(EQUAL)
-   &kp LS(N2)    &kp RA(Q)     &kp LS(N4)    &kp LS(N8)    &kp LS(N9)    &kp LS(N7)         &kp LS(N0)    &kp BSLH      &kp LS(N5)    &kp RA(NUBS)  &kp RBKT       &kp LS(BSLH)
-   &kp NUBS      &kp RA(E)     &kp EQUAL     &kp RA(N8)    &kp RA(N9)    &kp LS(GRAVE)      &kp SLASH     &kp LS(DOT)   &kp LS(COMMA) &kp COMMA     &kp DOT        &kp LS(NUBS)
+   &trans        &kp LS(N1)    &kp RA(Q)     &kp BSLH      &kp LS(N4)    &kp LS(N5)         &kp GRAVE     &kp LS(N6)    &kp LS(RBKT)  &kp LS(N7)    &kp LS(MINUS) &kp LS(EQUAL)
+   &kp LS(N2)    &kp NUBS      &kp LS(N8)    &kp RA(N7)    &kp RA(N8)    &kp RA(MINUS)      &kp RA(NUBS)  &kp RA(N9)    &kp RA(N0)    &kp LS(N9)    &kp LS(NUBS)  &kp LS(BSLH)
+   &kp EQUAL     &kp RA(E)     &kp RA(RBKT)  &kp LS(N0)    &kp RBKT      &kp SLASH          &kp LS(SLASH) &kp LS(DOT)   &kp LS(COMMA) &kp COMMA     &kp DOT       &kp LS(GRAVE)
                                              &trans        &trans        &trans             &trans        &trans        &trans
                         >;
                 };
