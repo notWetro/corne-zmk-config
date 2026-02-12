@@ -22,7 +22,7 @@ Konvertiert vom Moonlander KOY Layout für ZMK.
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │TAB │ X  │ Q  │ Ä  │ Ü  │ Ö  │      │ B  │ P  │ W  │ M  │ J  │NUM │
 └────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │LWR │BSPC│SPC*│      │ENT*│TAB │NUM │
+                │LWR │SPC*│BSPC│      │TAB │ENT*│NUM │
                 └────┴────┴────┘      └────┴────┴────┘
 ```
 
@@ -33,11 +33,13 @@ Konvertiert vom Moonlander KOY Layout für ZMK.
 **Thumb Cluster:**
 - `LWR` = Layer 1 (Lower)
 - `SPC*` = Space (hold: Layer 2 Symbols)
+- `BSPC` = Backspace
+- `TAB` = Tab
 - `ENT*` = Enter (hold: Layer 2 Symbols)
 - `NUM` = Layer 3 (Numbers)
 
 **Timing:**
-- Home-Row Mods: 200ms halten
+- Home-Row Mods: 175ms halten
 - Tap: < 125ms
 
 ---
@@ -169,7 +171,7 @@ Links:                          Rechts:
 
 ### Home-Row Mods richtig nutzen
 - **Tippen**: Schnell < 125ms → normaler Buchstabe
-- **Halten**: > 200ms → Modifier aktiv
+- **Halten**: > 175ms → Modifier aktiv
 - **Schnelles Tippen**: Zwischen Tasten < 125ms → kein Modifier
 
 ### Vim Workflow
@@ -214,7 +216,7 @@ https://github.com/notWetro/corne-zmk-config/actions
 ### Home-Row Mods zu langsam/schnell?
 In `config/corne.keymap`:
 ```c
-tapping-term-ms = <200>;        // Haltezeit (aktuell 200ms)
+tapping-term-ms = <175>;        // Haltezeit (aktuell 175ms)
 quick-tap-ms = <125>;           // Schnelltipp-Schwelle
 require-prior-idle-ms = <125>;  // Verzögerung vor Aktivierung
 ```
