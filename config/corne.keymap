@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // German keycode definitions
-#define DE_Y Y
-#define DE_Z Z
+#define DE_Y Z
+#define DE_Z Y
 #define DE_SS MINUS
 #define DE_UE LBKT
 #define DE_OE SEMI
@@ -23,8 +23,9 @@
                         label = "HOMEROW_MODS_LEFT";
                         #binding-cells = <2>;
                         flavor = "balanced";
-                        tapping-term-ms = <280>;
-                        quick-tap-ms = <175>;
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <125>;
+                        require-prior-idle-ms = <125>;
                         bindings = <&kp>, <&kp>;
                         hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
                 };
@@ -34,8 +35,9 @@
                         label = "HOMEROW_MODS_RIGHT";
                         #binding-cells = <2>;
                         flavor = "balanced";
-                        tapping-term-ms = <280>;
-                        quick-tap-ms = <175>;
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <125>;
+                        require-prior-idle-ms = <125>;
                         bindings = <&kp>, <&kp>;
                         hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
                 };
