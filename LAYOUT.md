@@ -58,11 +58,11 @@ Konvertiert vom Moonlander KOY Layout für ZMK.
 
 **Funktionen:**
 - **Zahlenreihe**: 0-9 für schnellen Zugriff
-- **Bluetooth**: 
+- **Bluetooth**:
   - `BTCL` = Bluetooth Clear (alle Pairings löschen)
   - `BT1-5` = Bluetooth Profile 1-5 wählen
 - **Navigation**: Pfeiltasten rechts (Vim-Style: HJKL Position)
-- **Media Controls**: 
+- **Media Controls**:
   - `Prev` = Previous Track
   - `Play` = Play/Pause Toggle
   - `Next` = Next Track
@@ -224,5 +224,5 @@ Layer 2 in `config/corne.keymap` anpassen.
 
 ---
 
-**Layout erstellt**: 2025-02-12  
+**Layout erstellt**: 2026-02-12
 **Letzte Änderung**: Media Controls zu Lower Layer hinzugefügt
