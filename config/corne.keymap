@@ -45,13 +45,13 @@
 // | DEL  |  K  |  .  |  O  |  ,  |  Y  |   |  V  |  G  |  C  |  L  |  ß  |  Z   |
 // | ESC  | H/⇧ | A/⌃ | E/⌥ | I/⌘ |  U  |   |  D  | T/⌘ | R/⌥ | N/⌃ | S/⇧ |  F   |
 // | TAB  |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  |  MO4 |
-//                    | NUM |SPC/S|BSPC |   | TAB |ENT/S| NUM |
+//                    | LWR |SPC/S|BSPC |   | TAB |ENT/S| NUM |
                         display-name = "Base";
                         bindings = <
    &kp DEL    &kp K         &kp DOT       &kp O         &kp COMMA     &kp DE_Y       &kp V  &kp G         &kp C         &kp L         &kp DE_SS     &kp DE_Z
    &kp ESC    &hml LSHFT H  &hml LCTRL A  &hml LALT E   &hml LGUI I   &kp U          &kp D  &hmr RGUI T   &hmr RALT R   &hmr RCTRL N  &hmr RSHFT S  &kp F
    &kp TAB    &kp X         &kp Q         &kp DE_AE     &kp DE_UE     &kp DE_OE      &kp B  &kp P         &kp W         &kp M         &kp J         &mo 4
-                                          &mo 2         &lt 1 SPACE   &kp BSPC       &kp TAB &lt 1 RET    &mo 2
+                                          &mo 3         &lt 1 SPACE   &kp BSPC       &kp TAB &lt 1 RET    &mo 2
                         >;
                 };
 
