@@ -119,13 +119,13 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U  |  I  |  O  |  P  |  Ü   |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  Ö  |  Ä   |
-// | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  -  | BASE |
+// | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  -  | ___ |
 //                    | CTRL| SPC | BSPC|   | RET | SPC | ALT |
                         display-name = "QWERTZ";
                         bindings = <
    &kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T          &kp DE_Z   &kp U  &kp I      &kp O    &kp P      &kp DE_UE
    &kp ESC    &kp A  &kp S  &kp D     &kp F     &kp G          &kp H      &kp J  &kp K      &kp L    &kp DE_OE  &kp DE_AE
-   &kp LSHFT  &kp DE_Y &kp X &kp C    &kp V     &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &to 0
+   &kp LSHFT  &kp DE_Y &kp X &kp C    &kp V     &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &trans
                             &kp LCTRL &kp SPACE &kp BSPC       &kp RET    &kp SPACE &kp RALT
                         >;
                 };

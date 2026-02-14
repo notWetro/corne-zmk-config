@@ -74,13 +74,13 @@
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |  /  |  7  |  8  |  9  |  -  |      |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  *  |  4  |  5  |  6  |  +  |      |
-// |      |     |     |     |QWERT|     |   |  =  |  1  |  2  |  3  |  .  |      |
+// |      |     |     |     |     |     |   |  =  |  1  |  2  |  3  |  .  |      |
 //                    |     |     |     |   |     |  0  |     |
                         display-name = "Numb";
                         bindings = <
    &trans        &trans        &trans        &trans        &trans        &trans             &kp LS(N7)    &kp N7        &kp N8        &kp N9        &kp SLASH      &trans
    &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &kp LS(RBKT)  &kp N4        &kp N5        &kp N6        &kp RBKT       &trans
-   &trans        &trans        &trans        &trans        &trans        &to 5              &kp LS(N0)    &kp N1        &kp N2        &kp N3        &kp DOT        &trans
+   &trans        &trans        &trans        &trans        &trans        &trans             &kp LS(N0)    &kp N1        &kp N2        &kp N3        &kp DOT        &trans
                                              &trans        &trans        &trans             &trans        &kp N0        &trans
                         >;
                 };
@@ -102,31 +102,16 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     | Layo| Rsz+| Rsz-|     |   | F1  | F2  | F3  | F4  | F5  | F6   |
-// |      |     | WS1 | Foc↓| Foc↑| Foc→|   | F7  | F8  | F9  | F10 | F11 | F12  |
-// |      |     | MvL | Mv↓ | Mv↑ | Mv→ |   | SS  | BRI-| BRI+|     |     | ___ |
-//                    |     |     |     |   |     |     |     |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Raise";
                         bindings = <
-   &trans            &trans            &kp LC(LA(LS(I))) &kp LC(LA(LS(A))) &kp LC(LA(LS(H))) &trans             &kp F1         &kp F2       &kp F3       &kp F4       &kp F5       &kp F6
-   &trans            &trans            &kp LC(LA(LS(D))) &kp LC(LA(LS(T))) &kp LC(LA(LS(R))) &kp LC(LA(LS(N))) &kp F7         &kp F8       &kp F9       &kp F10      &kp F11      &kp F12
-   &trans            &trans            &kp LC(LA(LS(V))) &kp LC(LA(LS(G))) &kp LC(LA(LS(C))) &kp LC(LA(LS(L))) &kp LG(LS(N4)) &kp C_BRI_DN &kp C_BRI_UP &trans       &trans       &trans
-                                                          &kp LGUI          &trans            &kp SPACE          &kp RET        &trans       &kp RALT
-                        >;
-                };
-
-                QWERTZ {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U  |  I  |  O  |  P  |  Ü   |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  Ö  |  Ä   |
-// | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  -  | BASE |
-//                    | CTRL| SPC | BSPC|   | RET | SPC | ALT |
-                        display-name = "QWERTZ";
-                        bindings = <
-   &kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T          &kp DE_Z   &kp U  &kp I      &kp O    &kp P      &kp DE_UE
-   &kp ESC    &kp A  &kp S  &kp D     &kp F     &kp G          &kp H      &kp J  &kp K      &kp L    &kp DE_OE  &kp DE_AE
-   &kp LSHFT  &kp DE_Y &kp X &kp C    &kp V     &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &to 0
-                            &kp LCTRL &kp SPACE &kp BSPC       &kp RET    &kp SPACE &kp RALT
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
 
@@ -135,6 +120,10 @@
                 };
 
                 extra_2 {
+                        status = "reserved";
+                };
+
+                extra_3 {
                         status = "reserved";
                 };
         };
