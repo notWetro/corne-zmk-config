@@ -23,8 +23,8 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │TAB │ X  │ Q  │ Ä  │ Ü  │ Ö  │      │ B  │ P  │ W  │ M  │ J  │ →4 │
 └────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │ →3 │SPC¹│BSPC│      │TAB │ENT¹│ →2 │
-                └────┴────┴────┘      └────┴────┴────┘
+               │ →3 │SPC¹│BSPC│      │TAB │ENT¹│ →2 │
+               └────┴────┴────┘      └────┴────┴────┘
 ```
 
 **Home-Row Mods:**
@@ -58,8 +58,8 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │ ´  │ €  │ ~  │ =  │ +  │ -  │      │ _  │ :  │ ;  │ ,  │ .  │ °  │
 └────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │    │ __ │    │      │    │ __ │    │
-                └────┴────┴────┘      └────┴────┴────┘
+               │    │ __ │    │      │    │ __ │    │
+               └────┴────┴────┘      └────┴────┴────┘
 ```
 
 **Vim-Essential Characters:**
@@ -91,8 +91,8 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │    │    │    │    │→5  │    │      │ =  │ 1  │ 2  │ 3  │ .  │    │
 └────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │    │    │    │      │    │ 0  │ __ │
-                └────┴────┴────┘      └────┴────┴────┘
+               │    │    │    │      │    │ 0  │ __ │
+               └────┴────┴────┘      └────┴────┴────┘
 ```
 
 **Numpad (Right Side):**
@@ -119,10 +119,10 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │BTCL│BT1 │BT2 │BT3 │BT4 │BT5 │      │ ←  │ ↓  │ ↑  │ →  │    │    │
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
-│SHFT│    │    │    │    │    │      │◀◀ │▶‖ │▶▶ │🔇 │Vol-│Vol+│
+│SHFT│    │    │    │    │    │      │ ◀◀ │ ▶‖ │ ▶▶ │ 🔇 │Vol-│Vol+│
 └────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │ __ │    │    │      │    │    │    │
-                └────┴────┴────┘      └────┴────┴────┘
+               │ __ │    │    │      │    │    │    │
+               └────┴────┴────┘      └────┴────┴────┘
 ```
 
 **macOS Shortcuts:**
@@ -160,8 +160,8 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │    │    │MvL │Mv↓ │Mv↑ │Mv→ │      │⌘⇧4 │Bri-│Bri+│    │    │ __ │
 └────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │    │    │    │      │    │    │    │
-                └────┴────┴────┘      └────┴────┴────┘
+               │    │    │    │      │    │    │    │
+               └────┴────┴────┘      └────┴────┴────┘
 ```
 
 **Aerospace Shortcuts (Left - requires Ctrl+Alt+Shift+key):**
@@ -183,7 +183,7 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 
 ## Layer 5: QWERTZ (Standard German)
 
-**Access:** Press `→5` on Layer 2 (Numbers)  
+**Access:** Press `→5` on Layer 2 (Numbers)
 **Return:** Press bottom-right corner (→0)
 
 ```
@@ -193,9 +193,9 @@ ZMK configuration optimized for Vim/Neovim and Aerospace tiling window manager.
 │ESC │ A  │ S  │ D  │ F  │ G  │      │ H  │ J  │ K  │ L  │ Ö  │ Ä  │
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
 │SHFT│ Y  │ X  │ C  │ V  │ B  │      │ N  │ M  │ ,  │ .  │ -  │→0  │
-└────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┴────┴────┘
-                │CTRL│SPC │BSPC│      │RET │SPC │ALT │
-                └────┴────┴────┘      └────┴────�────────┘
+└────┴────┴────┼────┼────┼────┤      ├────┼────┼────┼────┼────┴────┘
+               │CTRL│SPC │BSPC│      │RET │SPC │ALT │    │
+               └────┴────┴────┘      └────┴────┴────┴────┘
 ```
 
 **Standard QWERTZ:**
@@ -321,8 +321,8 @@ Thumb        •   •   •          Thumb    •   •   •
 
 ---
 
-**Layout Created**: 2026-02-14  
-**Optimized For**: 
+**Layout Created**: 2026-02-14
+**Optimized For**:
 - Vim/Neovim development
 - Aerospace tiling window manager (macOS)
 - German language typing (DE layout)
