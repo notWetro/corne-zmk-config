@@ -41,22 +41,22 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
+// 0------------------------------------------------------------------------------
 // | DEL  |  K  |  .  |  O  |  ,  |  Y  |   |  V  |  G  |  C  |  L  |  ß  |  Z   |
 // | ESC  | H/⇧ | A/⌃ | E/⌥ | I/⌘ |  U  |   |  D  | T/⌘ | R/⌥ | N/⌃ | S/⇧ |  F   |
-// | TAB  |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  |  MO4 |
-//                    | LWR |SPC/S|BSPC |   | TAB |ENT/S| NUM |
+// | LWR  |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  |  MO4 |
+//                    | NUM |SPC/S|BSPC |   | TAB |ENT/S| SYM |
                         display-name = "Base";
                         bindings = <
    &kp DEL    &kp K         &kp DOT       &kp O         &kp COMMA     &kp DE_Y       &kp V  &kp G         &kp C         &kp L         &kp DE_SS     &kp DE_Z
    &kp ESC    &hml LSHFT H  &hml LCTRL A  &hml LALT E   &hml LGUI I   &kp U          &kp D  &hmr RGUI T   &hmr RALT R   &hmr RCTRL N  &hmr RSHFT S  &kp F
-   &kp TAB    &kp X         &kp Q         &kp DE_AE     &kp DE_UE     &kp DE_OE      &kp B  &kp P         &kp W         &kp M         &kp J         &mo 4
-                                          &mo 3         &lt 1 SPACE   &kp BSPC       &kp TAB &lt 1 RET    &mo 2
+   &mo 3      &kp X         &kp Q         &kp DE_AE     &kp DE_UE     &kp DE_OE      &kp B  &kp P         &kp W         &kp M         &kp J         &mo 4
+                                          &mo 2         &lt 1 SPACE   &kp BSPC       &kp TAB &lt 1 RET    &mo 1
                         >;
                 };
 
                 symbols_layer {
-// -----------------------------------------------------------------------------------------
+// 1------------------------------------------------------------------------------
 // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  /  |  ?  |  `   |
 // |  "   |  <  |  (  |  {  |  [  |  \  |   |  |  |  ]  |  }  |  )  |  >  |  '   |
 // |  ´   |  €  |  ~  |  =  |  +  |  -  |   |  _  |  :  |  ;  |  ,  |  .  |  °   |
@@ -71,7 +71,7 @@
                 };
 
                 numbers_layer {
-// -----------------------------------------------------------------------------------------
+// 2------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |  /  |  7  |  8  |  9  |  -  |      |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  *  |  4  |  5  |  6  |  +  |      |
 // |      |     |     |     |QWERT| LoL |   |  =  |  1  |  2  |  3  |  .  |      |
@@ -86,25 +86,25 @@
                 };
 
                 lower_layer {
-// -----------------------------------------------------------------------------------------
+// 3------------------------------------------------------------------------------
 // |  TAB | ⌘+X | ⌘+A | ⌘+C | ⌘+V | ⌘+Z |   |  :  |  /  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   | PREV| PLAY| NEXT| MUTE| V- | V+   |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  H  |  J  |  K  |  L  |     |      |
+// | SHFT |     |     |     |     |     |   | LFT | DWN |  UP | RGT | V-  | V+   |
 //                    | ___ |     |     |   |     |     |     |
                         display-name = "Lower";
                         bindings = <
    &kp TAB    &kp LG(X)    &kp LG(A)    &kp LG(C)    &kp LG(V)    &kp LG(Z)      &kp LS(DOT) &kp LS(N7)  &kp N8      &kp N9       &kp N0        &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT    &trans        &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP
-                          	        &trans       &trans       &trans         &trans      &trans      &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp H       &kp J       &kp K       &kp L        &trans        &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT    &kp C_VOL_DN  &kp C_VOL_UP
+                              	        &trans       &trans       &trans         &trans      &trans      &trans
                         >;
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
+// 4------------------------------------------------------------------------------
 // |      |     | Layo| Rsz+| Rsz-|     |   | F1  | F2  | F3  | F4  | F5  | F6   |
 // |      |     | WS1 | Foc↓| Foc↑| Foc→|   | F7  | F8  | F9  | F10 | F11 | F12  |
-// |      |     | MvL | Mv↓ | Mv↑ | Mv→ |   | SS  | BRI-| BRI+|     |     | ___ |
+// |      |     | MvL | Mv↓ | Mv↑ | Mv→ |   | SS  | BRI-| BRI+|     |     | ____ |
 //                    |     |     |     |   |     |     |     |
                         display-name = "Raise";
                         bindings = <
@@ -116,7 +116,7 @@
                 };
 
                 QWERTZ {
-// -----------------------------------------------------------------------------------------
+// 5------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U  |  I  |  O  |  P  |  Ü   |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  Ö  |  Ä   |
 // | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  -  | BASE |
@@ -131,8 +131,8 @@
                 };
 
                 extra_1 {
-// -----------------------------------------------------------------------------------------
 // League of Legends Gaming Layer
+// 6------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | ENT  |
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  B  | →0   |
