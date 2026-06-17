@@ -66,14 +66,11 @@
 // |  "   |  <  |  [  |  {  |  (  |  /  |   |  \  |  )  |  }  |  ]  |  >  |  '   |
 // |  °   |  €  |  ~  |  =  |  +  |  |  |   |  _  |  :  |  ;  |     |     |  ´   |
 //                    |     | ___ |     |   |     | ___ |     |
-// !"§$%ß&/#?<
-// "^|{)-„=}≠°'
-// >€±=+ß_:;mj´
                         display-name = "Symb";
                         bindings = <
-   &trans        &kp LS(N1)    &kp LS(AT)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)         &kp MINUS     &kp LS(N6)    &kp LS(N7)    &kp BSLH      &kp LS(MINUS)   &kp GRAVE
-   &kp LS(N2)    &kp NUBS      &kp RA(N7)    &kp RA(N8)    &kp LS(N9)    &kp SLASH          &kp RA(NUBS)  &kp LS(N0)    &kp RA(N9)    &kp RA(N0)    &kp LS(NUBS)    &kp LS(BSLH)
-   &kp LS(GRAVE) &kp RA(E)     &kp RA(RBKT)  &kp LS(N0)    &kp RBKT      &kp MINUS          &kp LS(SLASH) &kp LS(DOT)   &kp LS(COMMA) &trans        &trans          &kp EQUAL
+   &trans        &kp LS(N1)    &kp LA(L)     &kp NUHS      &kp LS(N4)    &kp LS(N5)         &kp SLASH      &kp LS(N6)    &kp LS(RBKT)  &kp NUBS      &kp LS(MINUS)   &kp LS(EQUAL)
+   &kp LS(N2)    &kp GRAVE     &kp RA(N5)    &kp RA(N8)    &kp LS(N8)    &kp LS(N7)         &kp RS(RA(N7)) &kp LS(N9)    &kp RA(N9)    &kp RA(N6)    &kp LS(GRAVE)   &kp LS(BSLH)
+   &kp LS(NUBS)  &kp RA(E)     &kp RA(N)     &kp LS(N0)    &kp RBKT      &kp RA(N7)         &kp LS(SLASH)  &kp LS(DOT)   &kp LS(COMMA) &trans        &trans          &kp EQUAL
                                              &trans        &trans        &trans             &trans        &trans        &trans
                         >;
                 };
